@@ -1,0 +1,34 @@
+{
+  "authorNick": "Itlvck",
+  "authorFullName" : "Luca Terranova",
+  "birthDay" : "20/11/2005",
+  "nationality": "Italian",
+  "nativeRegion" : "Liguria",
+  "nativeCity" : "Pietra Ligure(SV)",
+  "currentCity" : "Milan(MI)",
+  "studies" : {
+    "highSchool" : {
+      "schoolName" : "I.S.S. Giovanni Falcone",
+      "location" : "Loano(SV)",
+      "course" : "Scientific Diploma (Applied Sciences option)",
+      "completed" : true,
+      "finalGrade" : "85/100"
+    },
+    "ITS" : {
+      "ITSName" : "ITS Angelo Rizzoli",
+      "location" : "Milan(MI)",
+      "course": "Software Architect Specialist",
+      "completed" : false,
+      "finalGrade" : null
+    }
+  },
+  "employment" : {
+    "company" : "LCS Group",
+    "site" : "Usmate-Velate(MB)",
+    "marketSector" : "Industrial Automation",
+    "specialization" : "Intralogistics Automation",
+    "rank" : "Apprentice",
+    "role" : "Software Engineer",
+    "department" : "Software Airport"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "name" : "Name",
+  "authors" : [
+    "author1",
+    "author2"
+  ],
+  "description" : "Description",
+  "type" : "WebApp / MobileAndroid / MobileIOS / Desktop",
+  "link" : "https://example.com",
+  "startDate" : "01/01/2026",
+  "endDate " : "02/02/2026",
+  "status" : "Planned / Planning / Development / Testing / Released / Operational / Completed / Abandoned",
+  "techStack": [
+    {
+      "lang" : "Javascript",
+      "version" : "ECMAScript 6+",
+      "libraries" : [
+        "library1",
+        "library2"
+      ],
+      "frameworks" : [
+        "frmw1",
+        "frmw2"
+      ]
+    },
+    {
+      "lang" : "Java",
+      "version" : "21",
+      "libraries" : [
+        "library1",
+        "library2"
+      ],
+      "frameworks" : [
+        "frmw1",
+        "frmw2"
+      ]
+    }
+  ],
+  "dataStorage" : {
+    "method" : "RelDB / NoRelDB / Local",
+    "lang" : "SQL / NoSQL / JSON / XML / ...",
+    "dialect" : "none / MySQL / MongoDB / ..."
+  },
+  "externalTools" : {
+    "VersionControl" : "Git",
+    "RemoteRepo" : "GitHub",
+    "APIs" : [
+      {
+        "name" : "name",
+        "reference" : "https://thisAPI.com"
+      },
+      {
+        "name" : "name",
+        "reference" : "https://thisAPI.com"
+      }
+    ],
+    "others" : [
+      {
+        "name" : "anotherTool",
+        "role" : "Documentation / Development / Research"
+      }
+    ]
+  }
+}
