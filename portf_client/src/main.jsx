@@ -1,0 +1,25 @@
+import {StrictMode} from 'react'
+import {createRoot} from 'react-dom/client'
+import {
+    createBrowserRouter,
+    RouterProvider,
+} from "react-router-dom";
+import { inject } from '@vercel/analytics'; //vercel analytics
+import { injectSpeedInsights } from '@vercel/speed-insights'; //vercel speed insights
+
+import {routes} from "./routes/routes.jsx";
+
+import '#styles/index.css';
+import '#styles/personalStyle.css';
+
+//injects
+inject();
+injectSpeedInsights();
+
+const router = createBrowserRouter(routes)
+
+createRoot(document.getElementById('root')).render(
+    <StrictMode>
+        <RouterProvider router={router}></RouterProvider>
+    </StrictMode>,
+)

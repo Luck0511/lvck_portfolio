@@ -1,0 +1,102 @@
+#root {
+    margin: 0;
+    background-color: var(--background-color);
+    width: 100%;
+}
+
+.outletChild{
+    width: 100%;
+}
+
+.heroSec{
+    overflow: clip;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: clamp(100px, 15vh, 25vh);
+    padding: 0 3rem;
+    border-radius: 0 0 2rem 2rem;
+    background-color: var(--side-background);
+    color: var(--text-on-side);
+}
+.heroSec .heroSec_logo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 75%;
+    background-color: var(--section-background);
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.heroSec_logo img{
+    height: 100%;
+    margin: 1rem;
+}
+
+.heroSec .heroSec_nav{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+}
+
+.heroSec .heroSec_nav ul{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.heroSec .heroSec_nav ul li{
+    list-style: none;
+}
+
+.heroSec .heroSec_nav ul li .navLink{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 0.5rem;
+    background-color: var(--important-element);
+    color: var(--element-text);
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.heroSec .heroSec_nav ul li .navLink:hover{
+    background-color: var(--hover-element);
+    box-shadow: var(--borderBox-hover-glow);
+    color: var(--hover-text);
+    translate: 0 0.25rem;
+    transition-duration: 0.3s;
+}
+
+.heroSec .heroSec_nav ul li .active{
+    background-color: var(--pressed-element);
+    animation: pulse-glow 2.5s ease-in-out infinite;
+    color: var(--pressed-text);
+    translate: 0 0.5rem;
+}
+@media only screen and (max-width: 600px){
+    .heroSec {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+    .heroSec .heroSec_logo{
+        height: 45%;
+        margin: 0 auto;
+    }
+    .heroSec .heroSec_nav{
+        width: 100%;
+    }
+    .heroSec .heroSec_nav ul{
+        margin: 0 auto;
+    }
+}
