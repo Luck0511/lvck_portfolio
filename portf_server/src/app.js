@@ -1,7 +1,11 @@
 //utility imports
 import express from 'express';
 import { createServer } from 'http';
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
+import {APILimiter} from "#services/authService.js";
+import authRouter from "#routers/authAPI.js";
+import mainRouter from "#routers/mainAPI.js";
 
 export const app = express();
 export const server = createServer(app);
@@ -14,9 +18,12 @@ const corsOptions = {
 
 // middleware setup --> all request-responses pass here before
 app.use(cors(corsOptions)); //allow cross-origin request, mainly for localhost testing
+app.use(cookieParser()) //parse cookies from requests-response
 app.use(express.json()); //parse JSON from requests-response
 
-// APIS --> ENDPOINTS MANAGEMENT
+//app.use('/api/auth', APILimiter, authRouter);
+app.use('/api/main', APILimiter, mainRouter);
+
 app.get('/', (req, res) => {
     res.json({
         message : "Portfolio server is running and responsive!",
