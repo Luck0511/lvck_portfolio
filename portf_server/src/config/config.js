@@ -16,29 +16,59 @@ export const appConfig = {
         host: process.env.HOST || 'localhost',
         url: process.env.APP_URL || `http://localhost:${getNumericEnv('PORT', 3000)}`,
     },
+    //data persistence configuration
+    data:{
+        dataPath: getRequiredEnv('APP_DATA_PATH', './data/')
+    },
 
     //Authentication and security
     auth: {
+        jwtSecret: getRequiredEnv('JWT_SECRET'),
+        jwtExpires: getRequiredEnv('JWT_EXPIRES_IN'),
+        cookieMaxAge: getNumericEnv('COOKIE_MAX_AGE', 86400000), //1 day
+        bcryptRounds: getNumericEnv('BCRYPT_ROUNDS', 12),
         apiLimit: getNumericEnv('API_LIMIT', 1000),
         apiCooldown: getNumericEnv('API_COOLDOWN', 300000),
     }
 }
 
 /**
+ * #### returns a flat version of the object passed on params
+ **/
+function flatObject(obj) {
+    return Object.entries(obj).reduce((acc, [key, value]) => {
+        const fullKey = key;
+
+        if (value && typeof value === 'object' && !Array.isArray(value)) {
+            Object.assign(acc, flatObject(value, fullKey));
+        } else {
+            acc[fullKey] = value;
+        }
+        return acc;
+    }, {});
+}
+
+/**
  * #### Validates app configuration for production environment
  **/
 export const validateConfig = () => {
-    //minimum required keys with existing value
+    //minimum required keys with existing value for production environment
     const requiredInProd = [
-        'NODE_ENV',
-        'API_LIMIT',
-        'API_COOLDOWN'
+        'env',
+        'jwtSecret',
+        'jwtExpires',
+        'cookieMaxAge',
+        'bcryptRounds',
+        'apiLimit',
+        'apiCooldown',
+        'dataPath'
     ]
     //check if key value exist
     if (appConfig.app.env === 'production') {
+        //flatten the object and cycle through the keys and values to search for required keys
         for (const key of requiredInProd) {
-            if (!process.env[key]) {
-                throw new Error(`${key} is required in production environment`)
+            if (!flatObject(appConfig)[key]) {
+                throw new Error(`${key} config key is missing and is required for production environment`)
             }
         }
         //additional checks...

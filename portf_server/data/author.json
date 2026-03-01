@@ -4,12 +4,11 @@
   "birthDay" : "20/11/2005",
   "nationality": "Italian",
   "nativeRegion" : "Liguria",
-  "nativeCity" : "Pietra Ligure(SV)",
   "currentCity" : "Milan(MI)",
   "studies" : {
     "highSchool" : {
       "schoolName" : "I.S.S. Giovanni Falcone",
-      "location" : "Loano(SV)",
+      "location" : "notSpecified",
       "course" : "Scientific Diploma (Applied Sciences option)",
       "completed" : true,
       "finalGrade" : "85/100"
@@ -20,6 +19,15 @@
       "course": "Software Architect Specialist",
       "completed" : false,
       "finalGrade" : null
+    }
+  },
+  "certifications": {
+    "CambridgeEnglish": {
+      "type" : "linguistic",
+      "name" : "C1 Advanced",
+      "grade" : "C1",
+      "issued" : "05/2023",
+      "credentialID" : "C1991292"
     }
   },
   "employment" : {
