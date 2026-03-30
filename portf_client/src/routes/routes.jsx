@@ -1,6 +1,8 @@
 /*routes config file*/
 
 import App from "../App.jsx";
+import {ProjectsCmp} from "#pages/components/Projects.cmp.jsx";
+import {Home} from "#pages/Home.jsx";
 
 export const routes = [
     {
@@ -13,18 +15,8 @@ export const routes = [
                 element: <Home/>,
             },
             {
-                path: 'collection',
-                element: <Collection/>,
-                children: [
-                    {
-                        path: 'item',
-                        element: <Item />
-                    }
-                ]
-            },
-            {
-                path: 'about',
-                element: <About/>,
+                path: 'projects',
+                element: <ProjectsCmp/>,
             }
         ]
     }

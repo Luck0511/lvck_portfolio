@@ -1,6 +1,7 @@
 import './assets/styleSheets/App.css'
 import {Outlet} from "react-router";
 import {NavLink} from "react-router-dom";
+import {ProjectsCmp} from "#pages/components/Projects.cmp.jsx";
 
 function App() {
     const activeLink = ({isActive}) => isActive ? 'navLink active' : 'navLink';
@@ -18,7 +19,7 @@ function App() {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/collection" className={activeLink}>
+                            <NavLink to="/projects" className={activeLink}>
                                 Collection
                             </NavLink>
                         </li>
