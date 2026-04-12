@@ -12,7 +12,7 @@ const mainRouter = express.Router();
 //Method: GET - returns all projects data stored locally
 mainRouter.get('/projects',async (req, res) => {
     res.status(200).json({
-        message: 'Current projects available',
+        message: 'Current projects',
         date: new Date().toString(),
         projects: await getProjectData(),
     });

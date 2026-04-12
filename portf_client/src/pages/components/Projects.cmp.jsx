@@ -2,7 +2,7 @@ import axios from "axios";
 
 import {useEffect, useState} from "react";
 
-const PROJECTS_API = `http://localhost:3001/api/main/projects`;
+const PROJECTS_API = `http://localhost:3000/api/main/projects`;
 
 
 export const ProjectsCmp = () => {
