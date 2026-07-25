@@ -1,0 +1,158 @@
+#root {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.outletChild {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: clamp(1.5rem, 5vw, 3.5rem) clamp(1rem, 4vw, 3rem) 2rem;
+    box-sizing: border-box;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heroSec {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    overflow: clip;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.9rem clamp(1rem, 4vw, 3rem);
+    background-color: var(--side-background);
+    color: var(--text-on-side);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(6px);
+
+    .heroSec_logo {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        text-decoration: none;
+
+        .orbit-mark {
+            position: relative;
+            width: 34px;
+            height: 34px;
+            flex-shrink: 0;
+
+            .orbit-ring {
+                position: absolute;
+                inset: 0;
+                border: 1px solid var(--accent-dim);
+                border-radius: 50%;
+                animation: spin-slow 12s linear infinite;
+
+                .orbit-dot {
+                    position: absolute;
+                    top: -3px;
+                    left: 50%;
+                    width: 6px;
+                    height: 6px;
+                    margin-left: -3px;
+                    background: var(--accent);
+                    border-radius: 50%;
+                    box-shadow: 0 0 6px 1px var(--accent-glow);
+                }
+            }
+
+            .orbit-core {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                margin: -4px 0 0 -4px;
+                background: var(--accent);
+                border-radius: 50%;
+            }
+        }
+
+        .wordmark {
+            font-family: "Merriweather", serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: var(--text);
+            letter-spacing: 0.02em;
+
+            .accent-dot {
+                color: var(--accent);
+            }
+        }
+    }
+
+    .heroSec_nav {
+        display: flex;
+
+        ul {
+            width: 100%;
+            padding: 0;
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .navLink {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.55rem 1.1rem;
+            border-radius: 0.5rem;
+            background-color: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--line);
+            font-weight: 600;
+            font-size: 0.92rem;
+            cursor: pointer;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: var(--hover-element);
+                box-shadow: var(--borderBox-hover-glow);
+                color: var(--hover-text);
+                transition-duration: 0.3s;
+            }
+
+            &.active {
+                background-color: var(--pressed-element);
+                border-color: var(--pressed-element);
+                animation: pulse-glow 2.5s ease-in-out infinite;
+                color: var(--pressed-text);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heroSec {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.9rem;
+
+        .heroSec_nav ul {
+            justify-content: center;
+        }
+    }
+}

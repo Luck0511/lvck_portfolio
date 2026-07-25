@@ -9,8 +9,8 @@ import { injectSpeedInsights } from '@vercel/speed-insights'; //vercel speed ins
 
 import {routes} from "./routes/routes.jsx";
 
-import '#styles/index.css';
-import '#styles/personalStyle.css';
+import '#styles/index.scss';
+import '#styles/personalStyle.scss';
 
 //injects
 inject();

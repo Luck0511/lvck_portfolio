@@ -1,0 +1,93 @@
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    align-items: center;
+    padding: clamp(1.5rem, 4vw, 3rem) 0;
+}
+
+.hero-intro {
+    flex: 1 1 320px;
+    min-width: 280px;
+}
+
+.hero-eyebrow {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    color: var(--accent);
+    font-size: 0.95rem;
+    margin: 0 0 0.6rem;
+}
+
+.hero-name {
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-size: clamp(2.3rem, 6vw, 4rem);
+    line-height: 1.05;
+    color: var(--text);
+    margin: 0 0 0.9rem;
+}
+
+.hero-tagline {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: var(--text-muted);
+    max-width: 46ch;
+    line-height: 1.6;
+    margin: 0 0 1.6rem;
+}
+
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+
+    .btn-primary {
+        font: inherit;
+        font-weight: 700;
+        font-size: 0.95rem;
+        padding: 0.75rem 1.4rem;
+        border-radius: 0.6rem;
+        border: none;
+        cursor: pointer;
+        background: var(--accent);
+        color: var(--on-accent);
+    }
+
+    .btn-secondary {
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 0.75rem 1.4rem;
+        border-radius: 0.6rem;
+        border: 1px solid var(--line);
+        color: var(--text);
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.hero-terminal {
+    flex: 1 1 300px;
+    min-width: 260px;
+}
+
+.section-constellation,
+.section-timeline {
+    padding: clamp(2rem, 5vw, 3.5rem) 0;
+    text-align: center;
+
+    h2 {
+        font-size: clamp(1.4rem, 3vw, 1.9rem);
+        color: var(--text);
+        margin: 0 0 0.4rem;
+    }
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin: 0 0 2rem;
+}
+
+.section-timeline h2 {
+    margin-bottom: 2rem;
+}

@@ -1,20 +1,27 @@
 {
   "NasaGalleyAPI" : {
-    "name" : "NasaGalleyAPI",
+    "name" : "NasaGalleryAPI",
+    "subtitle" : "Vanilla JS · NASA Open API",
     "authors" : [
       "Itlvck"
     ],
-    "description" : "My very first webApp, developed in vanillaJs and used as educational project, allows users to search the vast NASA Gallery through its public APIs",
+    "description" : "My very first web app: lets users search the vast NASA Gallery through its public APIs.",
+    "more" : "Built as an educational project to practice fetch, pagination and rendering results from a real public API without any framework.",
     "type" : "WebApp (ClientOnly)",
     "link" : "https://luck0511.github.io/NasaGalleryApi/",
     "startDate" : "19/05/2025",
-    "endDate " : "30/06/2025",
-    "status" : "Live - Abandoned",
+    "endDate" : "30/06/2025",
+    "status" : "Abandoned",
+    "statusKind" : "warning",
     "techStack": [
       {
         "lang" : "Javascript",
         "version" : "ECMAScript 6+"
       }
+    ],
+    "tech" : [
+      "JavaScript (ES6+)",
+      "NASA Open API"
     ],
     "dataStorage" : "No data is being stored using this webApp",
     "externalTools" : {
@@ -34,20 +41,26 @@
   },
   "SplitterApp" : {
     "name" : "SplitterApp",
+    "subtitle" : "Bill splitter & tip calculator",
     "authors" : [
       "Itlvck"
     ],
-    "description" : "SplitterApp is a simple webApp that splits your bill and tells you how much each person has to pay, including a tip calculation feature. (Note: this app is NOT my original idea, it was meant to be a class exercise but i've decided to upgrade it and share it with you) ",
+    "description" : "Splits a bill between people and calculates each person’s share, including tips.",
+    "more" : "Started as a class exercise; upgraded and shared publicly with a cleaner UI and tip-calculation logic.",
     "type" : "WebApp (ClientOnly)",
     "link" : "https://luck0511.github.io/SplitterApp/",
     "startDate" : "01/06/2025",
-    "endDate " : "12/06/2025",
-    "status" : "Live - Active development",
+    "endDate" : "12/06/2025",
+    "status" : "Released",
+    "statusKind" : "success",
     "techStack": [
       {
         "lang" : "Javascript",
         "version" : "ECMAScript 6+"
       }
+    ],
+    "tech" : [
+      "JavaScript (ES6+)"
     ],
     "dataStorage" : "No data is being stored using this webApp",
     "externalTools" : {
@@ -61,18 +74,88 @@
       ]
     }
   },
-  "SBLProject": {
-    "SimpleBookLibrary" : {
-
-    },
-    "SBLMobile" : {
-
+  "SBLProject" : {
+    "name" : "SimpleBookLibrary + SBLMobile",
+    "subtitle" : "Personal library manager",
+    "authors" : [
+      "Itlvck"
+    ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "type" : "WebApp / MobileAndroid",
+    "link" : "",
+    "startDate" : null,
+    "endDate" : null,
+    "status" : "In Development",
+    "statusKind" : "info",
+    "techStack": [],
+    "tech" : [
+      "Web",
+      "Mobile"
+    ],
+    "dataStorage" : "Not yet defined",
+    "externalTools" : {
+      "VersionControl" : "Git",
+      "RemoteRepo" : "GitHub"
     }
   },
   "SolarSystemAnimation" : {
-
+    "name" : "SolarSystemAnimation",
+    "subtitle" : "Orbital background animation",
+    "authors" : [
+      "Itlvck"
+    ],
+    "description" : "The animated solar system used as the live background of my real portfolio site.",
+    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "type" : "WebApp (ClientOnly)",
+    "link" : "https://luck0511.github.io/SolarSystemAnimation/",
+    "startDate" : null,
+    "endDate" : null,
+    "status" : "Live",
+    "statusKind" : "success",
+    "techStack": [
+      {
+        "lang" : "Javascript",
+        "version" : "ECMAScript 6+"
+      }
+    ],
+    "tech" : [
+      "JavaScript",
+      "Canvas"
+    ],
+    "dataStorage" : "No data is being stored using this webApp",
+    "externalTools" : {
+      "VersionControl" : "Git",
+      "RemoteRepo" : "GitHub"
+    }
   },
   "MinixGames" : {
-
+    "name" : "MinixGames",
+    "subtitle" : "Mini browser games collection",
+    "authors" : [
+      "Itlvck"
+    ],
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "type" : "WebApp (ClientOnly)",
+    "link" : "",
+    "startDate" : null,
+    "endDate" : null,
+    "status" : "Concept",
+    "statusKind" : "muted",
+    "techStack": [
+      {
+        "lang" : "Javascript",
+        "version" : "ECMAScript 6+"
+      }
+    ],
+    "tech" : [
+      "JavaScript"
+    ],
+    "dataStorage" : "Not yet defined",
+    "externalTools" : {
+      "VersionControl" : "Git",
+      "RemoteRepo" : "GitHub"
+    }
   }
 }

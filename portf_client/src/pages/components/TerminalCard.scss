@@ -1,0 +1,70 @@
+.terminal-card {
+    background: var(--bg-panel-2);
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+    overflow: hidden;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+}
+
+.terminal-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.9rem;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--line);
+
+    &-label {
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.75rem;
+        color: var(--text-muted);
+    }
+}
+
+.terminal-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    color: var(--text-muted);
+
+    .terminal-btn-min {
+        width: 10px;
+        height: 1px;
+        background: currentColor;
+        display: inline-block;
+    }
+
+    .terminal-btn-max {
+        width: 9px;
+        height: 9px;
+        border: 1px solid currentColor;
+        display: inline-block;
+    }
+
+    .terminal-btn-close {
+        font-size: 0.85rem;
+        line-height: 1;
+        display: inline-block;
+    }
+}
+
+.terminal-body {
+    padding: 1.1rem 1.2rem;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.82rem;
+    line-height: 1.85;
+    color: var(--text);
+}
+
+.terminal-prompt {
+    color: var(--accent);
+}
+
+.terminal-comment {
+    color: var(--text-muted);
+}
+
+.terminal-line-gap {
+    margin-top: 0.7rem;
+}

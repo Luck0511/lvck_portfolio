@@ -23,7 +23,7 @@ mainRouter.get('/author',async (req, res) => {
     res.status(200).json({
         message: 'Data about me ;)',
         date: new Date().toString(),
-        projects: await getAuthorData(),
+        author: await getAuthorData(),
     });
 })
 

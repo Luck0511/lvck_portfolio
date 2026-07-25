@@ -1,0 +1,98 @@
+:root {
+
+/* === Space-theme tokens (accentHue: 85) === */
+    --bg: oklch(15% 0.035 280);
+    --bg-panel: oklch(20% 0.04 280);
+    --bg-panel-2: oklch(24% 0.045 280);
+    --line: oklch(32% 0.03 280);
+    --line-bright: oklch(45% 0.03 280 / 0.6);
+    --text: oklch(93% 0.015 90);
+    --text-muted: oklch(68% 0.02 275);
+    --accent: oklch(80% 0.14 85);
+    --accent-bright: oklch(86% 0.15 85);
+    --accent-dim: oklch(55% 0.09 85);
+    --accent-glow: oklch(80% 0.14 85 / 0.55);
+    --on-accent: oklch(20% 0.03 280);
+    --info: oklch(74% 0.1 235);
+
+/* === Status badge colors === */
+    --status-success-bg: oklch(70% 0.13 150 / 0.15);
+    --status-success-fg: oklch(78% 0.13 150);
+    --status-warning-bg: oklch(75% 0.14 60 / 0.15);
+    --status-warning-fg: oklch(80% 0.14 60);
+    --status-info-bg: oklch(70% 0.12 240 / 0.15);
+    --status-info-fg: oklch(80% 0.12 240);
+    --status-muted-bg: oklch(55% 0.02 270 / 0.15);
+    --status-muted-fg: oklch(72% 0.02 270);
+
+/* === Feedback colors (kept from the original palette) === */
+    --success-green: hsla(141, 45%, 40%, 1);
+    --error-red: hsla(0, 65%, 55%, 1);
+    --warning-orange: hsla(35, 85%, 60%, 1);
+    --bluey-gray: hsla(223, 18%, 35%, 1);
+
+/* === Semantic aliases: what the rest of the app (App.css, index.css, NavBar) reads === */
+    --background-color: var(--bg);
+    --section-background: var(--bg-panel-2);
+    --element-background: var(--bg-panel-2);
+    --side-background: var(--bg-panel);
+
+    --title: var(--text);
+    --strong-text: var(--text);
+    --text-on-side: var(--accent);
+
+    --important-element: var(--accent);
+    --element-text: var(--on-accent);
+    --element-border: 1px solid var(--line);
+    --disabled-element: var(--line);
+    --disabled-text: var(--text-muted);
+    --hover-element: var(--accent-bright);
+    --hover-text: var(--on-accent);
+    --pressed-element: var(--accent);
+    --pressed-text: var(--on-accent);
+    --borderBox-hover-glow:
+        0 0 10px 4px var(--accent-glow),
+        0 0 20px 8px var(--accent-glow);
+
+    --info-blue: var(--info);
+}
+
+/* === Style elements === */
+.icon {
+    width: 4rem;
+}
+
+/* === Animation elements === */
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow:
+            0 0 20px 3px var(--pressed-element),
+            0 0 30px 3px var(--pressed-element);
+    }
+    50% {
+        box-shadow:
+            0 0 10px var(--pressed-element),
+            0 0 20px var(--pressed-element);
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% { opacity: 0.25; }
+    50% { opacity: 0.9; }
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+@keyframes float-y {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
