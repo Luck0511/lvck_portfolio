@@ -1,2 +1,4 @@
 /portf_server/.env
 /portf_client/.env
+/portf_server/node_modules
+/portf_client/node_modules
