@@ -11,10 +11,13 @@ export const routes = [
         errorElement: <h1>404 not found (custom)</h1>,
         children: [
             {
+                name: 'Home',
                 index: true,
+                path: '/',
                 element: <Home/>,
             },
             {
+                name: 'Projects',
                 path: 'projects',
                 element: <ProjectsCmp/>,
             }
