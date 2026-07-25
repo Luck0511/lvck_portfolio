@@ -17,8 +17,8 @@
       "ITSName" : "ITS Angelo Rizzoli",
       "location" : "Milan(MI)",
       "course": "Software Architect Specialist",
-      "completed" : false,
-      "finalGrade" : null
+      "completed" : true,
+      "finalGrade" : "97/100"
     }
   },
   "certifications": {
@@ -30,13 +30,30 @@
       "credentialID" : "C1991292"
     }
   },
-  "employment" : {
-    "company" : "LCS Group",
-    "site" : "Usmate-Velate(MB)",
-    "marketSector" : "Industrial Automation",
-    "specialization" : "Intralogistics Automation",
-    "rank" : "Full-time employee",
-    "role" : "Junior Software Engineer",
-    "department" : "Software Airport"
-  }
+  "employment" : [
+    {
+      "company" : "LCS Group",
+      "site" : "Usmate-Velate(MB)",
+      "marketSector" : "Industrial Automation",
+      "specialization" : "Intralogistics Automation",
+      "contracts" : [
+        {
+          "type" : "Apprenticeship",
+          "startDate" : "17/11/2025",
+          "endDate" : "23/07/2026",
+          "ongoing" : false,
+          "role" : "Junior Software Engineer",
+          "department" : "Software development for Airport"
+        },
+        {
+          "type" : "Permanent full-time contract",
+          "startDate" : "23/07/2026",
+          "endDate" : null,
+          "ongoing" : true,
+          "role" : "Junior Software Engineer",
+          "department" : "Software development for Airport and Intralogistics Automation"
+        }
+      ]
+    }
+  ]
 }
