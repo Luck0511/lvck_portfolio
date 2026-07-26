@@ -3,8 +3,11 @@ import {Outlet, NavLink} from "react-router";
 import {NavBar} from "#pages/components/NavBar.jsx";
 import {Starfield} from "#pages/components/Starfield.jsx";
 import { Analytics } from "@vercel/analytics/react";
+import { injectSpeedInsights } from '@vercel/speed-insights';
+ 
 
 function App() {
+    injectSpeedInsights();
     return (
         <>
             <Starfield/>
