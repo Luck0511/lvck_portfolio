@@ -29,3 +29,5 @@ app.get('/', (req, res) => {
         message : "Portfolio server is running and responsive!",
     });
 });
+
+export default app;
