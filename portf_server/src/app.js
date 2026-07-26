@@ -12,7 +12,7 @@ export const server = createServer(app);
 
 //shared cors options between express and socket.io
 const corsOptions = {
-    origin: ["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"], // allow Vite dev servers
+    origin: ["http://localhost:5173", "https://itlvck.com"], // allow Vite servers
     credentials: true //allows cookies to be sent within CORS requests
 }
 
