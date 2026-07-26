@@ -2,6 +2,7 @@ import './assets/styleSheets/App.scss'
 import {Outlet, NavLink} from "react-router";
 import {NavBar} from "#pages/components/NavBar.jsx";
 import {Starfield} from "#pages/components/Starfield.jsx";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
     return (
@@ -43,6 +44,7 @@ function App() {
                     <small>©2026 Luca Terranova</small>
                 </section>
             </footer>
+            <Analytics />
         </>
     )
 }
