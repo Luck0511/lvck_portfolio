@@ -2,7 +2,7 @@ import './assets/styleSheets/App.scss'
 import {Outlet, NavLink} from "react-router";
 import {NavBar} from "#pages/components/NavBar.jsx";
 import {Starfield} from "#pages/components/Starfield.jsx";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
     return (
