@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "src/services/mainService.js": {
+      "includeFiles": "data/**"
+    }
+  }  
+}
