@@ -7,27 +7,34 @@
   "currentCity" : "Milan(MI)",
   "bioTagline" : "Building intralogistics automation software by day; shipping small web apps, APIs, and the occasional orbital-mechanics animation on the side.",
   "skills" : [
+    "JavaScript",
+    "Typescript",
+    "Java",
     "React",
     "Node.js",
-    "JavaScript",
     "Vite",
-    "Git & GitHub",
-    "REST APIs",
-    "HTML/CSS"
+    "Git",
+    "GitHub",
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "jQuery",
+    "Hibernate"
   ],
   "studies" : {
     "highSchool" : {
-      "schoolName" : "I.S.S. Giovanni Falcone",
-      "location" : "notSpecified",
+      "name" : "I.S.S. Giovanni Falcone",
+      "location" : "Loano(SV)",
       "course" : "Scientific Diploma (Applied Sciences option)",
       "period" : "2019–2024",
       "completed" : true,
       "finalGrade" : "85/100"
     },
     "ITS" : {
-      "ITSName" : "ITS Angelo Rizzoli",
+      "name" : "ITS Angelo Rizzoli",
       "location" : "Milan(MI)",
       "course": "Software Architect Specialist",
+      "period" : "2024–2026",
       "completed" : true,
       "finalGrade" : "97/100"
     }
@@ -37,8 +44,7 @@
       "type" : "linguistic",
       "name" : "C1 Advanced",
       "grade" : "C1",
-      "issued" : "05/2023",
-      "credentialID" : "C1991292"
+      "issued" : "05/2023"
     }
   },
   "employment" : [

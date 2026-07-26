@@ -27,7 +27,6 @@ export const TerminalCard = ({ author }) => {
                 <div className="terminal-comment">// Base: {currentCity}, IT · from {nativeRegion}</div>
                 <div className="terminal-comment">
                     // {its.completed ? "Studied" : "Studying"}: {its.course}, {its.ITSName}
-                    {its.completed && its.finalGrade ? ` — ${its.finalGrade}` : ""}
                 </div>
                 <div className="terminal-line-gap">
                     <span className="terminal-prompt">$</span> cat certifications.log

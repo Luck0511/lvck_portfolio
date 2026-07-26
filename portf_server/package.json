@@ -5,6 +5,7 @@
   "main": "server.js",
   "type": "module",
   "imports": {
+    "#icons/*": "./src/assets/icons/*",
     "#routers/*": "./src/routes/v1/restAPI/*",
     "#services/*": "./src/services/*"
   },

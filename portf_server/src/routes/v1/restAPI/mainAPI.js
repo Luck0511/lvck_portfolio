@@ -2,12 +2,12 @@
 import express from "express";
 
 //service import
-import {getAuthorData, getProjectData} from "#services/mainService.js"
+import {getAuthorData, getProjectData, getIconData} from "#services/mainService.js"
 
 //set up a authRouter to manage all endpoints
 const mainRouter = express.Router();
 
-/*=====================LOBBY API=====================*/
+/*=====================MAIN API=====================*/
 
 //Method: GET - returns all projects data stored locally
 mainRouter.get('/projects',async (req, res) => {
@@ -26,6 +26,13 @@ mainRouter.get('/author',async (req, res) => {
         author: await getAuthorData(),
     });
 })
+
+//Method: GET - returns svg icon for a give name
+mainRouter.get('/svgIcon/:name',async (req, res) => {
+    const { name } = req.params;
+    const svg = await getIconData(name);
+    res.status(200).send(svg);
+});
 
 //export the router to be used in app.js
 export default mainRouter;

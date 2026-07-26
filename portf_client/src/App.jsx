@@ -1,6 +1,5 @@
 import './assets/styleSheets/App.scss'
-import {Outlet} from "react-router";
-import {NavLink} from "react-router-dom";
+import {Outlet, NavLink} from "react-router";
 import {NavBar} from "#pages/components/NavBar.jsx";
 import {Starfield} from "#pages/components/Starfield.jsx";
 
@@ -25,7 +24,7 @@ function App() {
                 <div className="footerInfo">
                     <section id="infoMain">
                         <h3>Luca Terranova</h3>
-                        <h4><small>Software Architect</small></h4>
+                        <h4><small>Junior Software Architect</small></h4>
                     </section>
                     <section>
                         <h4>Contact:</h4>

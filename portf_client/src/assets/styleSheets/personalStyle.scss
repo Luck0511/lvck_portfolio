@@ -1,31 +1,31 @@
 :root {
 
 /* === Space-theme tokens (accentHue: 85) === */
-    --bg: oklch(15% 0.035 280);
-    --bg-panel: oklch(20% 0.04 280);
-    --bg-panel-2: oklch(24% 0.045 280);
-    --line: oklch(32% 0.03 280);
-    --line-bright: oklch(45% 0.03 280 / 0.6);
-    --text: oklch(93% 0.015 90);
-    --text-muted: oklch(68% 0.02 275);
-    --accent: oklch(80% 0.14 85);
-    --accent-bright: oklch(86% 0.15 85);
-    --accent-dim: oklch(55% 0.09 85);
-    --accent-glow: oklch(80% 0.14 85 / 0.55);
-    --on-accent: oklch(20% 0.03 280);
-    --info: oklch(74% 0.1 235);
+    --bg: hsla(238, 50%, 7%, 1);
+    --bg-panel: hsla(237, 36%, 11%, 1);
+    --bg-panel-2: hsla(237, 31%, 16%, 1);
+    --line: hsla(234, 16%, 22%, 1);
+    --line-bright: hsla(234, 11%, 36%, 0.6);
+    --text: hsla(44, 28%, 90%, 1);
+    --text-muted: hsla(228, 8%, 61%, 1);
+    --accent: hsla(42, 77%, 58%, 1);
+    --accent-bright: hsla(42, 99%, 64%, 1);
+    --accent-dim: hsla(42, 51%, 36%, 1);
+    --accent-glow: hsla(42, 77%, 58%, 0.55);
+    --on-accent: hsla(236, 29%, 11%, 1);
+    --info: hsla(202, 67%, 64%, 1);
 
 /* === Status badge colors === */
-    --status-success-bg: oklch(70% 0.13 150 / 0.15);
-    --status-success-fg: oklch(78% 0.13 150);
-    --status-warning-bg: oklch(75% 0.14 60 / 0.15);
-    --status-warning-fg: oklch(80% 0.14 60);
-    --status-info-bg: oklch(70% 0.12 240 / 0.15);
-    --status-info-fg: oklch(80% 0.12 240);
-    --status-muted-bg: oklch(55% 0.02 270 / 0.15);
-    --status-muted-fg: oklch(72% 0.02 270);
+    --status-success-bg: hsla(135, 37%, 53%, 0.15);
+    --status-success-fg: hsla(134, 48%, 64%, 1);
+    --status-warning-bg: hsla(29, 83%, 61%, 0.15);
+    --status-warning-fg: hsla(28, 100%, 67%, 1);
+    --status-info-bg: hsla(204, 71%, 60%, 0.15);
+    --status-info-fg: hsla(203, 100%, 72%, 1);
+    --status-muted-bg: hsla(224, 7%, 46%, 0.15);
+    --status-muted-fg: hsla(224, 10%, 66%, 1);
 
-/* === Feedback colors (kept from the original palette) === */
+/* === Feedback colors === */
     --success-green: hsla(141, 45%, 40%, 1);
     --error-red: hsla(0, 65%, 55%, 1);
     --warning-orange: hsla(35, 85%, 60%, 1);

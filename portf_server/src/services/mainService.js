@@ -20,3 +20,10 @@ export const getAuthorData = async ()=>{
     const data = JSON.parse(await readFile(dataPath, 'utf-8'));
     return data
 }
+
+export const getIconData = async (iconName)=>{
+    //get dynamic path
+    const dataPath = `${appConfig.data.dataPath}/assets/icons/${iconName}.svg`;
+    const svg = await readFile(dataPath, 'utf-8');
+    return svg;
+}

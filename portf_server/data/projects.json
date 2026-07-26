@@ -41,7 +41,7 @@
   },
   "SplitterApp" : {
     "name" : "SplitterApp",
-    "subtitle" : "Bill splitter & tip calculator",
+    "subtitle" : "Bill splitter & tip calcluator",
     "authors" : [
       "Itlvck"
     ],
@@ -51,7 +51,7 @@
     "link" : "https://luck0511.github.io/SplitterApp/",
     "startDate" : "01/06/2025",
     "endDate" : "12/06/2025",
-    "status" : "Released",
+    "status" : "Live",
     "statusKind" : "success",
     "techStack": [
       {
@@ -78,10 +78,11 @@
     "name" : "SimpleBookLibrary + SBLMobile",
     "subtitle" : "Personal library manager",
     "authors" : [
-      "Itlvck"
+      "Itlvck",
+      "Nana"
     ],
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
-    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "description" : "A simple library manager to keep track of books, authors, and reading status. It includes a web app and a mobile companion app.",
+    "more" : "Born as a personal project to manage my own book collection, it was later upgraded to include a mobile companion app for Android developed with the help of my colleague.",
     "type" : "WebApp / MobileAndroid",
     "link" : "",
     "startDate" : null,
@@ -90,8 +91,12 @@
     "statusKind" : "info",
     "techStack": [],
     "tech" : [
-      "Web",
-      "Mobile"
+      "JavaScript (ES6+)",
+      "Java 21",
+      "Android SDK",
+      "Sequelize ORM",
+      "Node.js",
+      "Express.js"
     ],
     "dataStorage" : "Not yet defined",
     "externalTools" : {
@@ -105,8 +110,8 @@
     "authors" : [
       "Itlvck"
     ],
-    "description" : "The animated solar system used as the live background of my real portfolio site.",
-    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "description" : "An animated solar system background with orbital mechanics and realistic scaling, built with vanilla JS and pure CSS.",
+    "more" : "Built as a small side exploration to practice orbital mechanics and animations, it was designed to be lightweight and visually appealing.",
     "type" : "WebApp (ClientOnly)",
     "link" : "https://luck0511.github.io/SolarSystemAnimation/",
     "startDate" : null,
@@ -120,8 +125,8 @@
       }
     ],
     "tech" : [
-      "JavaScript",
-      "Canvas"
+      "JavaScript (ES6+)",
+      "CSS"
     ],
     "dataStorage" : "No data is being stored using this webApp",
     "externalTools" : {
@@ -131,18 +136,18 @@
   },
   "MinixGames" : {
     "name" : "MinixGames",
-    "subtitle" : "Mini browser games collection",
+    "subtitle" : "Mini games for Max fun",
     "authors" : [
       "Itlvck"
     ],
-    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
-    "more" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, built as a small side exploration and kept lightweight on purpose.",
+    "description" : "A collection of mini browser games built with vanilla JS, HTML, and CSS, designed for quick entertainment to enjoy single player or multiplayer sessions with friends.",
+    "more" : "The biggest and most complex project yet, it was designed to be a fun and engaging way to practice game development and web technologies.",
     "type" : "WebApp (ClientOnly)",
     "link" : "",
-    "startDate" : null,
+    "startDate" : "04/08/2025",
     "endDate" : null,
-    "status" : "Concept",
-    "statusKind" : "muted",
+    "status" : "In Development",
+    "statusKind" : "info",
     "techStack": [
       {
         "lang" : "Javascript",
@@ -150,9 +155,12 @@
       }
     ],
     "tech" : [
-      "JavaScript"
+      "JavaScript (ES6+)",
+      "Sequelize ORM",
+      "Node.js",
+      "Express.js"
     ],
-    "dataStorage" : "Not yet defined",
+    "dataStorage" : "Database",
     "externalTools" : {
       "VersionControl" : "Git",
       "RemoteRepo" : "GitHub"

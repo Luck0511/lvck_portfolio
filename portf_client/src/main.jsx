@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client'
 import {
     createBrowserRouter,
     RouterProvider,
-} from "react-router-dom";
+} from "react-router";
 import { inject } from '@vercel/analytics'; //vercel analytics
 import { injectSpeedInsights } from '@vercel/speed-insights'; //vercel speed insights
 

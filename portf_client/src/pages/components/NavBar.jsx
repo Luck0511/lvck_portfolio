@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import {NavLink} from "react-router";
 import {routes} from "../../routes/routes.jsx";
 
 export const NavBar = () => {

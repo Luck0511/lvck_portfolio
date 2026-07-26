@@ -28,8 +28,8 @@
 
 .constellation-core {
     position: absolute;
-    left: 150px;
-    top: 150px;
+    left: 125px;
+    top: 125px;
     transform: translate(-50%, -50%);
     width: 52px;
     height: 52px;
@@ -56,4 +56,21 @@
     background: var(--bg-panel-2);
     border: 1px solid var(--line);
     color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // offset-path: circle(150px at center);
+    // offset-rotate: 0deg;
+    // animation: orbit 6s linear infinite;
 }
+
+.constellation-chip-icon {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+}
+
+// @keyframes orbit {
+//   from { offset-distance: 0%; }
+//   to   { offset-distance: 100%; }
+// }
